@@ -139,16 +139,6 @@
             }
         }
 
-        /* .popup::before {
-            content: '🌸';
-            position: absolute;
-            top: -30px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 3rem;
-            animation: bounce 1s ease-in-out infinite;
-        } */
-
         @keyframes bounce {
 
             0%,
@@ -301,9 +291,6 @@
             pointer-events: none;
         }
 
-        /* ------------------------------
-        Responsive cho màn hình nhỏ
-        ---------------------------------- */
         @media (max-width: 768px) {
             .center-message {
                 width: calc(100% - 20px);
@@ -363,11 +350,10 @@
 </head>
 
 <body>
-    <!-- Thông điệp chúc mừng-->
     <div class="center-message">
-        <strong>Chúc mừng 20-10 ❤️ BĂNG A4 ❤️</strong> <!--Sửa tiêu đề chúc mừng ở đây-->
+        <strong>Chúc mừng 20-10 ❤️ BĂNG A4 ❤️</strong> 
         <span id="centerText">
-            Ngày Phụ nữ Việt Nam<br> <!-- Sử lời nhắn hiển thị đầu ở đây-->
+            Ngày Phụ nữ Việt Nam<br> 
             Băng ơi mong bạn mãi luôn rạng rỡ như những bó hoa!
             Hãy nhấp vào nhưng icon đang rơi 😊!
              <!DOCTYPE html>
@@ -384,10 +370,7 @@
         </span>
     </div>
 
-    <!-- Ảnh động trang trí -->
-    <img src="mewmew.gif" alt="GIF" class="center-gif" /> <!-- Thay ảnh động bên dưới -->
-
-    <!-- Hiển thị lời chúc -->
+    <img src="mewmew.gif" alt="GIF" class="center-gif" /> 
     <div class="popup" id="popup">
         <div class="popup-content">
             <img id="popupImage" src="" alt="Lời chúc">
@@ -396,15 +379,13 @@
     </div>
     <div class="overlay" id="overlay"></div>
 
-    <!-- Nhạc nền  -->
-    <audio id="player" src="a.mp3"></audio> <!-- Sửa bài hát ở đây -->
+    <audio id="player" src="a.mp3"></audio> 
 
     <script>
-        //Sửa ảnh và lời nhắn ở đây
         const messages = [
             {
-                img: "a1.jpg", //Thay ảnh
-                text: "Chúc bạn luôn vui vẻ, xinh đẹp và ngập tràn yêu thương!" //Thay lời nhắn
+                img: "a1.jpg", 
+                text: "Chúc bạn luôn vui vẻ, xinh đẹp và ngập tràn yêu thương!" 
             },
             {
                 img: "a2.jpg",
@@ -432,7 +413,6 @@
         const popupImage = document.getElementById("popupImage");
         const popupMessage = document.getElementById("popupMessage");
         const centerText = document.getElementById("centerText");
-        //Thay những ảnh rơi từ trên xuống ở đây
         const letterImages = [
             "letters.png",
             "q3.png",
@@ -443,7 +423,6 @@
         ];
 
         function createHeartExplosion(x, y) {
-            //Thay icon khi ấn thư, hoa, quà
             const hearts = ['💗'];
             const numHearts = 12;
 
